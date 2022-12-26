@@ -1,0 +1,65 @@
+.filter_wrapper, .filter_wrapper>form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.filter_wrapper>form{
+    gap: 1rem;
+}
+.filter_wrapper>form>input{
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem;
+    background-color: #557153;
+    color: #A9AF7E;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: "Ubuntu", serif;
+    text-align: center;
+}
+.filter_search{
+    background-color:  #FF7D7D;
+    color:  #F8FFDB;
+    font-size: 1.5rem;
+    padding: 0.3rem;
+    border-radius: 3px;
+    font-family: "Ubuntu", sans-serif;
+    transition: all 0.3s linear;
+}
+.filter_search:hover{
+    background-color:  #BCE29E;
+    color:   #251B37;
+    transform: translateX(5px);
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+    .filter_wrapper>form{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:548px){
+    .filter_wrapper>form>input{
+        padding: 0.4rem;
+        font-size: 1.2rem;
+
+    }
+    .filter_search{
+        font-size: 1.2rem;
+
+    }
+}
+@media (max-width:416px){
+    .filter_wrapper>form>input{
+        padding: 0.1rem;
+        font-size: 1rem;
+
+    }
+    .filter_search{
+        font-size: 1rem;
+
+    } 
+}
+
